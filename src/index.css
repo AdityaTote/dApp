@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-container {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.form-container.show {
+  opacity: 1;
+  max-height: 200px; /* Adjust based on the content height */
+}
+
+.form-container.hide {
+  opacity: 0;
+  max-height: 0;
+}
+
+.same-width-btn {
+  width: 200px; /* Set a fixed width for all buttons */
+}
