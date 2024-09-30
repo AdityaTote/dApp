@@ -1,8 +1,45 @@
-# React + Vite
+# Wallet Adapter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Three Jargon's to know before:
+***1) Wallet:*** Store's public and private address of user.  
+***2) Decentralised Application:*** Application on blockchain.  
+***3) Wallet Apdapter:*** Intermediate entity between Wallet and DAPP.  
 
-Currently, two official plugins are available:
+### Fuctionality of the Wallet Adapter:
+* Airdrop SOL (in devnet)
+* Shows Balance
+* Signs a message
+* Send Transaction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#
+**This wallet is build in Devnet.**
+#
+## Stack:  
+* React (Frontend)
+* Solana Lib
+  * web3.js
+  * wallet-adapter
+
+# Installation  
+
+### Steps:
+
+1) Clone the Repo  
+```bash
+git clone https://github.com/AdityaTote/dApp.git
+```
+
+2) Change Directory
+```bash
+cd dApp
+```
+
+3) Install the all dependencies
+```bash
+npm install
+```
+
+4) Run Project
+```bash
+npm run dev
+```
